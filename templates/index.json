@@ -13,7 +13,7 @@
       "type": "content-over-image",
       "blocks": {
         "content_over_image_VdrUxR": {
-          "type": "content-over-image",
+          "type": "block-content-over-media",
           "name": "Content Over Image",
           "settings": {
             "content_type": "image",
@@ -29,7 +29,7 @@
           "blocks": {}
         },
         "content_over_image_LqVUFq": {
-          "type": "content-over-image",
+          "type": "block-content-over-media",
           "name": "Content Over Image",
           "settings": {
             "content_type": "image",
