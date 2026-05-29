@@ -17,6 +17,7 @@
           "name": "Content Over Image",
           "settings": {
             "content_type": "image",
+            "desktop_image": "shopify://shop_images/Container_6.png",
             "alt": "",
             "url": "",
             "new_tab": false,
@@ -32,6 +33,7 @@
           "name": "Content Over Image",
           "settings": {
             "content_type": "image",
+            "desktop_image": "shopify://shop_images/Container_7.png",
             "alt": "",
             "url": "",
             "new_tab": false,
@@ -49,17 +51,12 @@
       ],
       "name": "Content Over image",
       "settings": {
-        "slider_type": "loop",
-        "perPageDesktop": 1,
-        "perPageMobile": 1,
-        "perMove": 1,
-        "gap": 0,
-        "gap_mobile": 0,
-        "autoplay": false,
-        "autoplay_speed": 3,
-        "transition_speed": 1000,
-        "show_arrows": false,
-        "show_pagination": false
+        "section_width": "page-width",
+        "color_scheme": "",
+        "row": 2,
+        "col": 2,
+        "desktop": 2,
+        "mobile": "1"
       }
     },
     "product_list_fa6P9H": {
