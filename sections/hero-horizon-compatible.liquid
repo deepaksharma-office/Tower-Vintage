@@ -8,6 +8,7 @@
         <div class="customsliderimage__container-all">
           <div class="banners_images-custom">
             {% if section.settings.media_type == 'image' %}
+              {% if section.settings.desktop_image !=blank %}
               <img
                 class="customslider customslider--desktop {% if section.settings.mobile_image != blank %}small-hide{% endif %}"
                 src="{{ section.settings.desktop_image | image_url }}"
@@ -16,6 +17,9 @@
                 width="{{ section.settings.desktop_image.width }}"
                 height="{{ section.settings.desktop_image.height }}"
               >
+              {% else %}
+                {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+              {% endif %}
 
               {% if section.settings.mobile_image != blank %}
                 <img
@@ -26,6 +30,8 @@
                   width="{{ section.settings.mobile_image.width }}"
                   height="{{ section.settings.mobile_image.height }}"
                 >
+                {% else %}
+                  {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
               {% endif %}
 
             {% else %}
