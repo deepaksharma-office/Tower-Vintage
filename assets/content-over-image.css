@@ -1,6 +1,6 @@
 .content-over-image-section{
     display: grid;
-    grid-template-columns: var(--desktop-count);
+    grid-template-columns: repeat(var(--desktop-count), 1fr);
     column-gap: var(--cg);
     row-gap: var(--rg);
 }
