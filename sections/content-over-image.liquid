@@ -1,4 +1,4 @@
-{{ 'content-over-media.css' | stylesheet_tag | asset_url }}
+{{ 'content-over-media.css' | asset_url | stylesheet_tag  }}
 
 {% capture children %}
   {% content_for 'blocks' %}
