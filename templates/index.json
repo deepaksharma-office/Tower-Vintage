@@ -19,7 +19,7 @@
             "content_type": "image",
             "desktop_image": "shopify://shop_images/Container_6.png",
             "alt": "",
-            "url": "",
+            "url": "shopify://products/barcelona-lounge-chair",
             "new_tab": false,
             "height_desktop": 450,
             "height_mobile": 450,
@@ -35,7 +35,7 @@
             "content_type": "image",
             "desktop_image": "shopify://shop_images/Container_7.png",
             "alt": "",
-            "url": "",
+            "url": "shopify://products/mid-century-bench",
             "new_tab": false,
             "height_desktop": 450,
             "height_mobile": 450,
@@ -53,8 +53,8 @@
       "settings": {
         "section_width": "page-width",
         "color_scheme": "",
-        "row": 2,
-        "col": 2,
+        "row": 0,
+        "col": 0,
         "desktop": 2,
         "mobile": "1"
       }
