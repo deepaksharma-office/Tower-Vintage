@@ -65,6 +65,18 @@
 {% endcapture %}
 
 {% liquid
+  # {{ attributes }} must be on the immediate HTML parent of the text to preserve
+  # the click-to-edit connection in the theme editor. Any break between the text,
+  # including if-statements, will break the connection.
+
+  assign element = 'div'
+  if is_rte
+    assign element = 'rte-formatter'
+  endif
+%}
+
+
+{% liquid
   assign block_settings = block.settings
   assign menu = block_settings.menu
   assign heading = block_settings.heading
