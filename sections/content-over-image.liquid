@@ -1,20 +1,3 @@
-<style>
-    .content-over-image-section{
-        display: grid;
-        grid-template-columns: repeat(var(--desktop-count), 1fr);
-        column-gap: var(--cg);
-        row-gap: var(--rg);
-    }
-
-  @media screen and (max-width: 749px) {
-        .content-over-image-section{
-            grid-template-columns: var(--mobile-count);
-            column-gap: calc(var(--cg) / 2);
-            row-gap: calc(var(--rg) / 2);
-    }
-  }
-</style>
-
 {% capture children %}
   {% content_for 'blocks' %}
 {% endcapture %}
