@@ -11,97 +11,28 @@
   "name": "Content Over Image",
   "settings": [
     {
-      "type": "header",
-      "content": "Splide Settings"
+      "type": "range",
+      "id": "desktop",
+      "label": "Desktop Count",
+      "min": 1,
+      "max": 5,
+      "default": 2
     },
     {
       "type": "select",
-      "id": "slider_type",
-      "label": "Slider Type",
+      "id": "mobile",
+      "label": "Mobile Count",
+      "default": "1",
       "options": [
-        { "value": "slide", "label": "Slide" },
-        { "value": "loop", "label": "Loop" },
-        { "value": "fade", "label": "Fade" }
-      ],
-      "default": "loop"
-    },
-    {
-      "type": "range",
-      "id": "perPageDesktop",
-      "label": "Slides per view (Desktop)",
-      "min": 1,
-      "max": 1,
-      "step": 1,
-      "default": 1
-    },
-    {
-      "type": "range",
-      "id": "perPageMobile",
-      "label": "Slides per view (Mobile)",
-      "min": 1,
-      "max": 1,
-      "step": 1,
-      "default": 1
-    },
-    {
-      "type": "range",
-      "id": "perMove",
-      "label": "Slides to move",
-      "min": 1,
-      "max": 3,
-      "step": 1,
-      "default": 1
-    },
-    {
-      "type": "range",
-      "id": "gap",
-      "label": "Gap (Desktop)",
-      "min": 0,
-      "max": 60,
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "gap_mobile",
-      "label": "Gap (Mobile)",
-      "min": 0,
-      "max": 60,
-      "default": 0
-    },
-    {
-      "type": "checkbox",
-      "id": "autoplay",
-      "label": "Enable autoplay",
-      "default": false
-    },
-    {
-      "type": "range",
-      "id": "autoplay_speed",
-      "label": "Autoplay speed (seconds)",
-      "min": 1,
-      "max": 10,
-      "default": 3
-    },
-    {
-      "type": "range",
-      "id": "transition_speed",
-      "label": "Transition speed (ms)",
-      "min": 300,
-      "max": 2000,
-      "step": 100,
-      "default": 1000
-    },
-    {
-      "type": "checkbox",
-      "id": "show_arrows",
-      "label": "Show arrows",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "show_pagination",
-      "label": "Show pagination",
-      "default": false
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        }
+      ]
     }
   ],
   "blocks": [
