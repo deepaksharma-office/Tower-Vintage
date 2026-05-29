@@ -13,8 +13,8 @@
               width="{{ block.settings.desktop_image.width }}"
               height="{{ block.settings.desktop_image.height }}"
             >
-            {% else %}
-              {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+          {% else %}
+            {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
           {% endif %}
 
           {% if block.settings.mobile_image %}
@@ -26,27 +26,33 @@
               width="{{ block.settings.mobile_image.width }}"
               height="{{ block.settings.mobile_image.height }}"
             >
+          {% else %}
+            {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
           {% endif %}
 
         {% elsif block.settings.content_type == 'video' %}
-          <div
-            class="video__hero-wrap"
-            style="
-              --slider-video-height-desktop: {{ block.settings.height_desktop }}px;
-              --slider-video-height-mobile: {{ block.settings.height_mobile }}px;
-            "
-          >
-            {{
-              block.settings.video
-              | video_tag:
-                autoplay: true,
-                loop: true,
-                muted: true,
-                controls: false,
-                preload: true,
-                class: 'custom-video_content'
-            }}
-          </div>
+          {% if block.settings.video != blank %}
+            <div
+              class="video__hero-wrap"
+              style="
+                --slider-video-height-desktop: {{ block.settings.height_desktop }}px;
+                --slider-video-height-mobile: {{ block.settings.height_mobile }}px;
+              "
+            >
+              {{
+                block.settings.video
+                | video_tag:
+                  autoplay: true,
+                  loop: true,
+                  muted: true,
+                  controls: false,
+                  preload: true,
+                  class: 'custom-video_content'
+              }}
+            </div>
+          {% else %}
+            {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+          {% endif %}
         {% endif %}
       </div>
     </div>
