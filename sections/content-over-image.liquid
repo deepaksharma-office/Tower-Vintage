@@ -1,4 +1,18 @@
-{{ 'content-over-media.css' | asset_url | stylesheet_tag  }}
+{{ 'content-over-media.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
 
 {% capture children %}
   {% content_for 'blocks' %}
@@ -12,16 +26,18 @@
     data-shopify-visual-preview
   {% endif %}
 >
-  <div
-    class="content-over-image-section"
-    style="
-      --desktop-count: {{ section.settings.desktop }};
-      --mobile-count: {{ section.settings.mobile }};
-      --rg: {{ section.settings.col }}px;
-      --cg: {{ section.settings.row }}px;
-    "
-  >
-    {{ children }}
+  <div class="section-{{ section.id }}-padding">
+    <div
+      class="content-over-image-section"
+      style="
+        --desktop-count: {{ section.settings.desktop }};
+        --mobile-count: {{ section.settings.mobile }};
+        --rg: {{ section.settings.col }}px;
+        --cg: {{ section.settings.row }}px;
+      "
+    >
+      {{ children }}
+    </div>
   </div>
 </div>
 
@@ -92,6 +108,26 @@
           "value": "2"
         }
       ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 0
     }
   ],
   "blocks": [
