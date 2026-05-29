@@ -14,7 +14,7 @@
               height="{{ block.settings.desktop_image.height }}"
             >
           {% else %}
-            {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+            {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media small-hide' }}
           {% endif %}
 
           {% if block.settings.mobile_image %}
@@ -27,7 +27,7 @@
               height="{{ block.settings.mobile_image.height }}"
             >
           {% else %}
-            {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+            {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media medium-hide large-up-hide' }}
           {% endif %}
 
         {% elsif block.settings.content_type == 'video' %}
