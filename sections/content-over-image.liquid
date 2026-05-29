@@ -12,8 +12,16 @@
     data-shopify-visual-preview
   {% endif %}
 >
-    <div class="block">
-  {{ children }}
+  <div
+    class="content-over-image-section"
+    style="
+      --desktop-count: {{ section.settings.desktop }};
+      --mobile-count: {{ section.settings.mobile }};
+      --rg: {{ section.settings.col }};
+      --cg: {{ section.settings.row }};
+    "
+  >
+    {{ children }}
   </div>
 </div>
 
@@ -42,6 +50,24 @@
       "id": "color_scheme",
       "label": "t:settings.color_scheme",
       "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "row",
+      "label": "Row Gap",
+      "min": 0,
+      "max": 60,
+      "default": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "col",
+      "label": "Desktop Count",
+      "min": 0,
+      "max": 60,
+      "default": 2,
+      "unit": "px"
     },
     {
       "type": "range",
