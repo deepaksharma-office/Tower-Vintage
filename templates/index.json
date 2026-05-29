@@ -838,7 +838,7 @@
               "settings": {
                 "text": "<p>Tower Vintage is dedicated to preserving the elegance of mid-century modern design. Each piece in our collection is hand-selected for its exceptional craftsmanship, historical significance, and enduring beauty.</p>",
                 "width": "fit-content",
-                "max_width": "narrow",
+                "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
@@ -863,7 +863,7 @@
               "settings": {
                 "text": "<p>We believe in sustainable luxury—giving new life to vintage treasures that deserve to be appreciated for generations to come.</p>",
                 "width": "fit-content",
-                "max_width": "narrow",
+                "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
