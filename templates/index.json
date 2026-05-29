@@ -9,19 +9,6 @@
  */
 {
   "sections": {
-    "hero_horizon_compatible_zACpgN": {
-      "type": "hero-horizon-compatible",
-      "name": "Hero Banner (Static)",
-      "settings": {
-        "media_type": "image",
-        "customheight": true,
-        "height_desktop": 450,
-        "height_mobile": 650,
-        "show_overlay": true,
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "product_list_fa6P9H": {
       "type": "product-list",
       "blocks": {
@@ -218,7 +205,6 @@
     }
   },
   "order": [
-    "hero_horizon_compatible_zACpgN",
     "product_list_fa6P9H"
   ]
 }
