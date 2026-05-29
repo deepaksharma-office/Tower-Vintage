@@ -1,43 +1,10 @@
 {{ 'content-over-image.css' | asset_url | stylesheet_tag }}
 
-<div class="banner-slider-container">
-  <div class="slider__container-box">
-    <div
-      class="splide {% unless section.blocks.size > 1 %}visible{% endunless %}"
-      {% if section.blocks.size > 1 %}
-        id="splide-{{ section.id }}"
-      {% endif %}
-    >
-      <div class="splide__track">
-        <div class="splide__list">
-          {% if section.blocks.size > 0 %}
-            {% content_for 'blocks' %}
-          {% endif %}
-        </div>
-      </div>
+{% capture children %}
+  {% content_for 'blocks' %}
+{% endcapture %}
 
-      {% if section.settings.show_arrows %}
-        <div class="splide__arrows splide__arrows--ltr splide-arrows-{{ section.id }}">
-          <button class="splide__arrow splide__arrow--prev">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M13.17 12L8.22 7.05 9.64 5.64 16 12l-6.36 6.36-1.42-1.41z"/>
-            </svg>
-          </button>
-          <button class="splide__arrow splide__arrow--next">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M10.83 12l4.95-4.95-1.41-1.41L8 12l6.36 6.36 1.41-1.41z"/>
-            </svg>
-          </button>
-        </div>
-      {% endif %}
-
-      {% if section.settings.show_pagination %}
-        <ul class="splide__pagination splide-pagination-{{ section.id }}"></ul>
-      {% endif %}
-    </div>
-  </div>
-</div>
-
+{% render 'section', section: section, children: children %}
 
 {% schema %}
 {
