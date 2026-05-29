@@ -18,7 +18,7 @@
                 height="{{ section.settings.desktop_image.height }}"
               >
               {% else %}
-                {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+                {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media customslider--desktop' }}
               {% endif %}
 
               {% if section.settings.mobile_image != blank %}
@@ -31,7 +31,7 @@
                   height="{{ section.settings.mobile_image.height }}"
                 >
                 {% else %}
-                  {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+                  {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media customslider--mobile medium-hide large-up-hide' }}
               {% endif %}
 
             {% else %}
