@@ -1,4 +1,68 @@
 
+{% liquid
+  assign block_settings = block.settings
+  assign plain_text = block_settings.text | strip_newlines | strip
+  assign visible_text = plain_text | strip_html
+  assign text_width = width | default: block_settings.width
+
+  if block_settings.font_size contains 'heading-lg' or block_settings.font_size contains 'heading-xl'
+    assign type = 'display'
+  elsif block_settings.font_size contains 'heading'
+    assign type = 'heading'
+  else
+    assign type = 'body'
+  endif
+  if block_settings.type_preset == 'rte' or block_settings.type_preset == 'paragraph'
+    assign is_rte = true
+  endif
+
+  capture text_block_classes
+    if text_width == '100%'
+      echo 'text-block--align-' | append: block_settings.alignment
+      if block_settings.max_width == 'none'
+        echo ' text-block--full-width '
+      endif
+    endif
+    if block_settings.type_preset == 'custom'
+      echo ' custom-typography '
+      if block_settings.font_size != ''
+        echo ' custom-font-size '
+      endif
+      if block_settings.color != ''
+        echo ' custom-color '
+      endif
+    endif
+    if block_settings.background
+      echo ' text-block--background '
+    endif
+    if is_rte
+      echo ' rte '
+    endif
+  endcapture
+%}
+
+{% capture attributes %}
+  class="{{ class }} spacing-style text-block text-block--{{ block.id }} {{ block_settings.type_preset }}
+    {{ text_block_classes }}
+  "
+
+  style="
+    {% render 'spacing-padding', settings: block_settings %}
+    {% render 'typography-style', settings: block_settings %}
+    --width: {{ text_width }};
+    --max-width: var(--max-width--{{ type }}-{{ block_settings.max_width }});
+    {% if text_width == "100%" %}
+      --text-align: {{ block_settings.alignment }};
+    {% endif %}
+    {% if block_settings.background %}
+      --text-background-color: {{ block_settings.background_color | default: 'rgb(255 255 255 / 1.0)' }};
+      --text-corner-radius: {{ block_settings.corner_radius }}px;
+      --text-padding: max(var(--padding-2xs), calc((var(--text-corner-radius) + var(--padding-xs)) * (1 - cos(45deg))));
+    {% endif %}
+  "
+
+  {{ block.shopify_attributes }}
+{% endcapture %}
 
 {% liquid
   assign block_settings = block.settings
@@ -45,9 +109,13 @@
       {{ block.shopify_attributes }}
     >
       <summary class="menu__heading{% if heading == blank and menu.title == blank %} menu__heading--empty{% endif %} {{ block_settings.heading_preset }}">
-        <span class="menu__heading__default">{{ heading | default: menu.title }}</span>
+        <span class="menu__heading__default"><{{ element }} {{ attributes | strip_newlines | strip }}>
+    {{ block.settings.text }}
+  </{{ element }}></span>
         <span class="menu__heading__accordion">
-          {{ heading | default: menu.title }}
+          <{{ element }} {{ attributes | strip_newlines | strip }}>
+    {{ block.settings.text }}
+  </{{ element }}>
           {% if block_settings.accordion_icon == 'plus' %}
             <span class="menu__heading__toggle svg-wrapper icon-plus">
               {{- 'icon-plus.svg' | inline_asset_content -}}
