@@ -9,21 +9,17 @@
  */
 {
   "sections": {
-    "hero_slider_horizon_qmyqFg": {
-      "type": "hero-slider-horizon",
-      "name": "Hero Slider",
+    "hero_horizon_compatible_zACpgN": {
+      "type": "hero-horizon-compatible",
+      "name": "Hero Banner (Static)",
       "settings": {
-        "slider_type": "loop",
-        "perPageDesktop": 1,
-        "perPageMobile": 1,
-        "perMove": 1,
-        "gap": 0,
-        "gap_mobile": 0,
-        "autoplay": false,
-        "autoplay_speed": 3,
-        "transition_speed": 1000,
-        "show_arrows": false,
-        "show_pagination": false
+        "media_type": "image",
+        "customheight": true,
+        "height_desktop": 450,
+        "height_mobile": 650,
+        "show_overlay": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "hero_jVaWmY": {
@@ -303,7 +299,7 @@
     }
   },
   "order": [
-    "hero_slider_horizon_qmyqFg",
+    "hero_horizon_compatible_zACpgN",
     "hero_jVaWmY",
     "product_list_fa6P9H"
   ]
