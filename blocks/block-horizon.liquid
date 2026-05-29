@@ -13,6 +13,8 @@
               width="{{ block.settings.desktop_image.width }}"
               height="{{ block.settings.desktop_image.height }}"
             >
+            {% else %}
+              {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
           {% endif %}
 
           {% if block.settings.mobile_image %}
