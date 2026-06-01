@@ -21,7 +21,7 @@
             "menu": "main-menu",
             "heading": "SHOP",
             "menu_spacing": 12,
-            "show_as_accordion": false,
+            "show_as_accordion": true,
             "accordion_icon": "caret",
             "accordion_dividers": false,
             "inherit_color_scheme": true,
@@ -42,7 +42,7 @@
             "menu": "about",
             "heading": "",
             "menu_spacing": 12,
-            "show_as_accordion": false,
+            "show_as_accordion": true,
             "accordion_icon": "caret",
             "accordion_dividers": false,
             "inherit_color_scheme": true,
@@ -63,7 +63,7 @@
             "menu": "support",
             "heading": "SUPPORT",
             "menu_spacing": 12,
-            "show_as_accordion": false,
+            "show_as_accordion": true,
             "accordion_icon": "caret",
             "accordion_dividers": false,
             "inherit_color_scheme": true,
@@ -245,7 +245,7 @@
         "footer_copyright_jweRK8": {
           "type": "footer-copyright",
           "settings": {
-            "show_powered_by": true,
+            "show_powered_by": false,
             "font_size": "0.75rem",
             "case": "none"
           },
