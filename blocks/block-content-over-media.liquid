@@ -6,7 +6,7 @@
         {% if block.settings.content_type == 'image' %}
           {% if block.settings.desktop_image %}
             <img
-              class="customslider customslider--desktop {% if block.settings.mobile_image != blank %}small-hide{% endif %}"
+              class="customslider customslider--desktop"
               src="{{ block.settings.desktop_image | image_url }}"
               alt="{{ block.settings.alt | escape }}"
               loading="eager"
@@ -17,18 +17,6 @@
             {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media small-hide' }}
           {% endif %}
 
-          {% if block.settings.mobile_image %}
-            <img
-              class="customslider customslider--mobile medium-hide large-up-hide"
-              src="{{ block.settings.mobile_image | image_url }}"
-              alt="{{ block.settings.alt | escape }}"
-              loading="eager"
-              width="{{ block.settings.mobile_image.width }}"
-              height="{{ block.settings.mobile_image.height }}"
-            >
-          {% else %}
-            {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media medium-hide large-up-hide' }}
-          {% endif %}
 
         {% elsif block.settings.content_type == 'video' %}
           {% if block.settings.video != blank %}
@@ -105,11 +93,6 @@
       "type": "image_picker",
       "id": "desktop_image",
       "label": "Desktop Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "mobile_image",
-      "label": "Mobile Image"
     },
     {
       "type": "text",
