@@ -985,7 +985,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Visit Our Showroom</p>",
+                "text": "<p>Visit Our Wearhouse</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1063,7 +1063,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>123 Design District</p>",
+                    "text": "<p>5187 Shadowlawn Ave Suite 120</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1146,7 +1146,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Los Angeles, CA 90014</p>",
+                    "text": "<p>Tampa, FL 33610</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1177,7 +1177,7 @@
             "text_qp8bhf": {
               "type": "text",
               "settings": {
-                "text": "<p>Thursday - Sunday: 11am - 6pm</p>",
+                "text": "<p>By Appointment Only</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1202,7 +1202,7 @@
             "text_wGwD4A": {
               "type": "text",
               "settings": {
-                "text": "<p>By appointment: hello@towervintage.com</p>",
+                "text": "<p>Schedule an appointment: info@towervintage.com</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
