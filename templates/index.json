@@ -446,7 +446,8 @@
         "collection_list": [
           "furniture",
           "lightning",
-          "art-decor"
+          "art",
+          "objects"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": true,
@@ -533,7 +534,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>ONE-OF-ONE PIECES</p>",
+                "text": "",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -749,7 +750,7 @@
         "image_8VHgRn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Contssainer.png",
+            "image": "shopify://shop_images/IMG_3278.jpg",
             "link": "",
             "image_ratio": "square",
             "width": "fill",
@@ -882,27 +883,12 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_cfHAYX": {
-              "type": "button",
-              "settings": {
-                "label": "Our Story",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button-secondary",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_fYk7Bw",
             "text_mPydfk",
-            "text_r4fDWp",
-            "button_cfHAYX"
+            "text_r4fDWp"
           ]
         }
       },
@@ -1251,7 +1237,7 @@
         "image_zYDyyW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Container_8.png",
+            "image": "shopify://shop_images/IMG_2195.jpg",
             "link": "",
             "image_ratio": "square",
             "width": "fill",
@@ -1430,7 +1416,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Container_10_04c0f50c-c793-4b17-89c9-1254887b4f78.png",
+                    "image": "shopify://shop_images/IMG_0396.jpg",
                     "link": "",
                     "image_ratio": "square",
                     "width": "fill",
@@ -1486,7 +1472,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Container_11.png",
+                    "image": "shopify://shop_images/IMG_7912.jpg",
                     "link": "",
                     "image_ratio": "square",
                     "width": "fill",
@@ -1542,7 +1528,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Container_12.png",
+                    "image": "shopify://shop_images/IMG_3323.jpg",
                     "link": "",
                     "image_ratio": "square",
                     "width": "fill",
@@ -1598,7 +1584,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Container_9.png",
+                    "image": "shopify://shop_images/B3A706F5-EEAC-4620-AA65-00C3F6BE75B6_1.jpg",
                     "link": "",
                     "image_ratio": "square",
                     "width": "fill",
