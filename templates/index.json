@@ -1182,6 +1182,32 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "text_8jjQVQ": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Some items available at Gallimaufry</p><p>15445 N Nebraska Ave Suite 300</p><p>Lutz FL. Open Saturday and Sunday 10am to 6pm</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -1189,7 +1215,8 @@
             "group_4fijHp",
             "group_tXzpLd",
             "text_qp8bhf",
-            "text_wGwD4A"
+            "text_wGwD4A",
+            "text_8jjQVQ"
           ]
         },
         "image_zYDyyW": {
