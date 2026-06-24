@@ -838,7 +838,7 @@
             "text_mPydfk": {
               "type": "text",
               "settings": {
-                "text": "<p>Tower Vintage is dedicated to preserving the elegance of mid-century modern design. Each piece in our collection is hand-selected for its exceptional craftsmanship, historical significance, and enduring beauty.</p>",
+                "text": "<p>Tower Vintage is dedicated to preserving treasures of decades past. Each piece in our collection is hand-selected for its craftsmanship, design, or historical significance.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -972,7 +972,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Visit Our Wearhouse</p>",
+                "text": "<p>Visit Our Warehouse </p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
