@@ -1161,7 +1161,7 @@
             "text_wGwD4A": {
               "type": "text",
               "settings": {
-                "text": "<p>Schedule an appointment: info@towervintage.com</p>",
+                "text": "<p>Schedule an appointment: info@towervintage.com</p><p>Please read our policies prior to purchasing</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1182,20 +1182,6 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_bPqHnj": {
-              "type": "button",
-              "settings": {
-                "label": "BOOK A VISIT",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button-secondary",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
@@ -1203,8 +1189,7 @@
             "group_4fijHp",
             "group_tXzpLd",
             "text_qp8bhf",
-            "text_wGwD4A",
-            "button_bPqHnj"
+            "text_wGwD4A"
           ]
         },
         "image_zYDyyW": {
