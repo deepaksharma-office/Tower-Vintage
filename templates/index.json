@@ -446,8 +446,7 @@
         "collection_list": [
           "furniture",
           "lightning",
-          "art",
-          "objects"
+          "art-decor"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": true,
