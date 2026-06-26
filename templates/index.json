@@ -1187,7 +1187,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Some items available at Gallimaufry</p><p>15445 N Nebraska Ave Suite 300</p><p>Lutz FL. Open Saturday and Sunday 10am to 6pm</p>",
+                "text": "<p>Some items available at <a href=\"https://www.instagram.com/gallimaufryfl/\" title=\"https://www.instagram.com/gallimaufryfl/\">Gallimaufry</a></p><p>15445 N Nebraska Ave Suite 300</p><p>Lutz FL. Open Saturday and Sunday 10am to 6pm</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
